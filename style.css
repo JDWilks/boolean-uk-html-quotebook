@@ -12,54 +12,86 @@
 
   grid-template:
     "header header header" 50px
-    ". main ." 1fr
+    ". mainContent ." 1fr
     "footer footer footer" 50px /
     1fr 500px 1fr;
 }
 
 /* list styling */
-li {
+/* li {
   list-style: none;
+} */
+
+/* main styling */
+body {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+header {
+  text-align: center;
 }
 
 /* Header styling */
-
 .header {
   grid-area: header;
   background-color: red;
+  grid-gap: 5px;
 }
 
-/* Main body styling */
+.mainContent {
+  grid-area: mainContent;
+  display: grid;
+}
 
-.main {
+.music {
+  border: 1px solid black;
+  background-color: lightpink;
+  grid-gap: 5px;
+  grid-row: 500px;
   overflow: scroll;
 }
 
-/* Musician quotes styling */
+.list1 {
+  border: 1px solid black;
+  background-color: lightpink;
+  padding: 10px;
+  display: grid;
+  grid-row: auto;
+  overflow: scroll;
+}
 
+.design {
+  border: 1px solid black;
+  background-color: lightgreen;
+  grid-gap: 5px;
+  grid-row: 500px;
+  overflow: scroll;
+}
+
+/* Musician quotes styling
 .Music {
   grid-area: main;
   background-color: blue;
-}
-
-.musicQuotes {
   display: grid;
+  grid-template-rows: 200px;
+  grid-gap: 5px;
+  overflow: scroll;
 }
 
 /* Design quotes styling */
-
-.Design {
+/* .Design {
   grid-area: main;
   background-color: green;
-}
-
-.designQuotes {
   display: grid;
-}
+  grid-template-rows: 200px;
+  grid-gap: 5px;
+  overflow: scroll;
+} */
 
 /* Footer styling */
-
 .footer {
   grid-area: footer;
   background-color: yellow;
+  grid-gap: 5px;
 }
