@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+
+  grid-template:
+    "header header header" 50px
+    ". main ." 1fr
+    "footer footer footer" 50px /
+    1fr 500px 1fr;
+}
+
+/* list styling */
+li {
+  list-style: none;
+}
+
+/* Header styling */
+
+.header {
+  grid-area: header;
+  background-color: red;
+}
+
+/* Main body styling */
+
+.main {
+  overflow: scroll;
+}
+
+/* Musician quotes styling */
+
+.Music {
+  grid-area: main;
+  background-color: blue;
+}
+
+.musicQuotes {
+  display: grid;
+}
+
+/* Design quotes styling */
+
+.Design {
+  grid-area: main;
+  background-color: green;
+}
+
+.designQuotes {
+  display: grid;
+}
+
+/* Footer styling */
+
+.footer {
+  grid-area: footer;
+  background-color: yellow;
+}
