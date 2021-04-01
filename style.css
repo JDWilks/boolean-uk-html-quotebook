@@ -47,9 +47,17 @@ p {
   text-align: right;
 }
 
-.movies {
+/* .movies {
   background-color: lightpink;
 }
 .music {
   background-color: lightblue;
+} */
+
+p:nth-child(odd) {
+  background: lightpink;
+}
+
+p:nth-child(even) {
+  background: lightblue;
 }
