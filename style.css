@@ -4,7 +4,8 @@
 }
 
 h1 {
-  background-color: maroon;
+  background-image: linear-gradient(to right, maroon, lightgrey);
+
   width: 1fr;
   color: white;
   font-family: "Exo", sans-serif;
@@ -55,9 +56,9 @@ p {
 } */
 
 p:nth-child(odd) {
-  background: lightpink;
+  background-image: linear-gradient(to right, lightblue, lightpink);
 }
 
 p:nth-child(even) {
-  background: lightblue;
+  background-image: linear-gradient(to right, lightpink, lightblue);
 }
